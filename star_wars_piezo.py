@@ -1,3 +1,9 @@
+# Circuit Playground Express Star Wars
+#
+# a simple fun way to test the play_tone function
+#
+# MIT License (https://opensource.org/licenses/MIT)
+
 from adafruit_circuitplayground.express import cpx
 import time
 
