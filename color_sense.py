@@ -1,20 +1,23 @@
 #  Circuit Playground Express Color Sensing Example
-#  Use a NeoPixel RGB LED and light sensor on the Circuit Playground board to
+#  Use the NeoPixel RGB LED and light sensor on the Circuit Playground Express board to
 #  do basic color detection.  By quickly flashing full red, green, and blue color
 #  light from the NeoPixel the light sensor can read the intensity of the
 #  reflected light and roughly approximate the color of the object.
 #
 #  You can press and release button A or button B to do a color sense and
-#  print the red, green, blue component (Button B will also print out raw values)
-#  values to the REPL.  In addition all the NeoPixels on
+#  print the red, green, blue component values to the REPL 
+#  (Button B uses a verbose option and will also print out raw values).
+#
+#  In addition all the NeoPixels on
 #  the board will be lit up to the detected color.  You should hold a brightly
 #  colored object right above the light sensor and NeoPixel #1 (upper
 #  left part of board, look for the eye symbol next to the color sensor) when
 #  performing the color sense.
 # 
 # Author: David Boyd
-# Adapted from color_sense.ino (Limor Fried & Tony DiCola)
+# Adapted from color_sense.ino by (Limor Fried & Tony DiCola)
 # https://github.com/adafruit/Adafruit_CircuitPlayground/tree/master/examples/color_sense
+#
 # License: MIT License (https://opensource.org/licenses/MIT)
 from adafruit_circuitplayground.express import cpx
 import time
