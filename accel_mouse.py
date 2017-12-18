@@ -38,6 +38,8 @@ YMOUSE_SCALE = 1 # CHANGE THIS IF DIRECTION IS OPPOSITE WHAT YOU WANT
 # Set False if holding Circuit Playground Express with USB cable facing up
 # Set True to swap the X/Y axis.  If USB cable is to the right or left 
 SWAP_AXES = False
+# Interestingly, axes is the only word in English that can be the plural 
+# of three different singular noun forms--ax, axe, and AXIS.
 
 # Floating point linear interpolation function that takes a value inside one
 # range and maps it to a new value inside another range.  This is used to transform
