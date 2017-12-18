@@ -45,19 +45,19 @@ SWAP_AXES = False
 # range and maps it to a new value inside another range.  This is used to transform
 # each axis of acceleration to mouse velocity/speed. See this page for details
 # on the equation: https://en.wikipedia.org/wiki/Linear_interpolation
-def lerp(x, x0, x1, y0, y1):
+def lerp(value, v_min, v_max, d_min, d_max):
     """
-    Check if the input value (x) is outside its desired range and clamp to
-    those min/max y values.
+    Check if the input value is outside its value range (v_min < value > v_max) 
+    and clamp to desired min/max values (d_min < value > d_max).
     """
-    if x <= x0:
-        return y0
-    elif x > x1:
-        return y1
+    if value <= v_min:
+        return d_min
+    elif value > v_max:
+        return d_max
     else:
-        # compute the value y based on x's position within its range and
-        #  the desired y min & max.
-        return y0 + (y1 - y0)*((x-x0)/(x1-x0))
+        # compute the return value based on val's position within its range and
+        #  the desired min & max.
+        return d_min + (d_max - d_min)*((value-v_min)/(v_max-v_min))
 
 def get_button_press():
     """
