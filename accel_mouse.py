@@ -122,11 +122,10 @@ def main():
         if not left_first and left_second:
             # button was pressed
             mouse.press(Mouse.LEFT_BUTTON)
-            pass
         elif left_first and not left_second:
             # button was released
             mouse.release(Mouse.LEFT_BUTTON)
-            pass
+            
 
         # Check for right button pressed / released.
         if not right_first and right_second:
