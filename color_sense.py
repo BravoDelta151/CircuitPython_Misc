@@ -30,6 +30,10 @@ BLUE = (0, 0, 255)
 CLEAR = (0, 0, 0)
 
 def sense_color(verbose_out = False):
+    """
+    Flash the neopixel closest to the light sensor Red, Green and
+    Blue and measure the amount of light reflected by each color
+    """
     cpx.pixels.fill(CLEAR) # clear pixels so they don't interfere
     time.sleep(.5)
     # Save the current pixel brightness so it can later be restored.  Then bump
